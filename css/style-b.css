@@ -1,0 +1,63 @@
+/******  GENERAL  ******/
+
+body {
+  background-color: LightGray;
+  width: 100vw;
+}
+
+
+
+/******  NAVIGATION  ******/
+
+.top-nav {
+  position: fixed;
+  width: 100vw;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-nav > .content {
+  height: 4.375rem;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 0.938rem;
+}
+
+.logo {
+  width: 26px;
+  /*  vertically centers element with unknown height */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.links {
+  float: right;
+  margin: 0; /* clears margin for vertical centering */
+  padding: 0;
+  line-height: 4.357rem; /* vertically centers list elements, based on container height */
+}
+
+.links > li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.05rem;
+  color: #838994;
+  display: inline-block;
+  margin-left: 1.563rem;
+}
+
+.links > li:nth-child(1) {
+  color: #4c5058;
+  font-weight: 500;
+}
+
+.links > li:hover {
+  color: #333;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+
+/******  GENERAL  ******/
