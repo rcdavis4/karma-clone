@@ -1,11 +1,20 @@
 /******  GENERAL  ******/
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   background-color: LightGray;
   width: 100vw;
 }
 
-
+/* container class to use throughout page*/
+.content {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 0.938rem; /* equiv. to 15px */
+}
 
 /******  NAVIGATION  ******/
 
@@ -18,9 +27,6 @@ body {
 
 .top-nav > .content {
   height: 4.375rem;
-  width: 60%;
-  margin: 0 auto;
-  padding: 0 0.938rem;
 }
 
 .logo {
@@ -31,31 +37,41 @@ body {
   transform: translateY(-50%);
 }
 
-.links {
+.top-nav .links {
   float: right;
   margin: 0; /* clears margin for vertical centering */
-  padding: 0;
   line-height: 4.357rem; /* vertically centers list elements, based on container height */
 }
 
-.links > li {
+.links li {
   font-family: 'Roboto', sans-serif;
   font-size: 1.05rem;
-  color: #838994;
   display: inline-block;
   margin-left: 1.563rem;
+  letter-spacing: 0.01em;
 }
 
-.links > li:nth-child(1) {
+.links a {
+  color: #838994;
+}
+
+.links a:hover {
+  cursor: pointer;
+  color: #f15a29;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.links a:active {
   color: #4c5058;
   font-weight: 500;
 }
 
-.links > li:hover {
-  color: #333;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+/* temporary active state for demo purposes only*/
+.links li:nth-child(1) a {
+  color: #4c5058;
+  font-weight: 500;
 }
 
 

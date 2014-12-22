@@ -95,6 +95,7 @@ template {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -442,6 +443,8 @@ th {
  */
 
 
-ul {
+ol, ul {
+  list-style: none;
   padding: 0;
 }
+
