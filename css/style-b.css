@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: LightGray;
+/*  background-color: LightGray;*/
   width: 100vw;
 }
 
@@ -15,6 +15,8 @@ body {
   margin: 0 auto;
   padding: 0 0.938rem; /* equiv. to 15px */
 }
+
+
 
 /******  NAVIGATION  ******/
 
@@ -38,17 +40,17 @@ body {
 }
 
 .top-nav .links {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
   float: right;
   margin: 0; /* clears margin for vertical centering */
   line-height: 4.357rem; /* vertically centers list elements, based on container height */
 }
 
 .links li {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.05rem;
   display: inline-block;
-  margin-left: 1.563rem;
-  letter-spacing: 0.01em;
+  margin-left: 1.563rem
 }
 
 .links a {
@@ -75,5 +77,20 @@ body {
 }
 
 
+/******  HERO INTRODUCTION  ******/
 
-/******  GENERAL  ******/
+.hero {
+  background-image: url(../img/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom; /* fixes bottom of image to the container */
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 79vh;
+  overflow: hidden; /* rid the seemingly margins on top/bottom */
+}
+
+
+
+
+
+
