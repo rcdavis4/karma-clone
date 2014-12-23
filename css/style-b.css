@@ -2,11 +2,12 @@
 
 html {
   -webkit-font-smoothing: antialiased;
+  font-size: 16px;
 }
 
 body {
-/*  background-color: LightGray;*/
   width: 100vw;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* container class to use throughout page*/
@@ -40,7 +41,6 @@ body {
 }
 
 .top-nav .links {
-  font-family: 'Roboto', sans-serif;
   font-size: 1.05rem;
   letter-spacing: 0.01em;
   float: right;
@@ -82,15 +82,35 @@ body {
 .hero {
   background-image: url(../img/hero-img.jpg);
   background-repeat: no-repeat;
-  background-position: center bottom; /* fixes bottom of image to the container */
+  background-position: center bottom; /* pins bottom of image to the container */
   -webkit-background-size: cover;
   background-size: cover;
   height: 79vh;
   overflow: hidden; /* rid the seemingly margins on top/bottom */
 }
 
+.hero .content {
+  position: relative;
+  top: 35%;
+}
 
+.hero h1, h3, .button {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
 
+.hero h1 {
+  
+}
+
+.hero h3 {
+  
+}
+
+.button {
+   
+}
 
 
 
