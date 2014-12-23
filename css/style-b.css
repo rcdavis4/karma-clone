@@ -85,32 +85,50 @@ body {
   background-position: center bottom; /* pins bottom of image to the container */
   -webkit-background-size: cover;
   background-size: cover;
-  height: 79vh;
+  height: 100vh;
   overflow: hidden; /* rid the seemingly margins on top/bottom */
 }
 
 .hero .content {
   position: relative;
   top: 35%;
+  font-size: 1.5rem;
 }
 
-.hero h1, h3, .button {
+.hero h1, h3 {
   text-align: center;
   color: #fff;
   font-weight: 300;
 }
 
 .hero h1 {
-  
+  margin-bottom: 0.5rem;
 }
 
 .hero h3 {
-  
+  font-size: 1.1em; 
+  margin-top: 0;
 }
 
 .button {
-   
+  font-size: 0.75em;
+  text-align: center;
 }
 
+button {
+  padding: 0.8em 1.9em;
+  border-radius: 5px;
+  background-color: #f15a29;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.button button:hover {
+  background-color: rgba(241, 90, 41, 0.8);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
 
 
