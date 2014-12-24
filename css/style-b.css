@@ -34,10 +34,7 @@ body {
 
 .logo {
   width: 26px;
-  /*  vertically centers element with unknown height */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-top: 1em;
 }
 
 .top-nav .links {
@@ -79,7 +76,7 @@ body {
 
 /******  HERO INTRODUCTION  ******/
 
-.hero {
+.hero-intro {
   background-image: url(../img/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center bottom; /* pins bottom of image to the container */
@@ -89,46 +86,68 @@ body {
   overflow: hidden; /* rid the seemingly margins on top/bottom */
 }
 
-.hero .content {
+.hero-intro .content {
   position: relative;
   top: 35%;
   font-size: 1.5rem;
 }
 
-.hero h1, h3 {
+.hero-intro h1, h3 {
   text-align: center;
   color: #fff;
   font-weight: 300;
 }
 
-.hero h1 {
+.hero-intro h1 {
   margin-bottom: 0.5rem;
 }
 
-.hero h3 {
+.hero-intro h3 {
   font-size: 1.1em; 
   margin-top: 0;
 }
 
-.button {
+.big-button {
+  display: block;
+  width: 156px;
+  margin: 0 auto;
   font-size: 0.75em;
   text-align: center;
-}
-
-button {
-  padding: 0.8em 1.9em;
+  padding: 0.8em;
   border-radius: 5px;
   background-color: #f15a29;
   cursor: pointer;
   border: none;
   color: #fff;
+  outline: none;
 }
 
-.button button:hover {
+.big-button:hover {
   background-color: rgba(241, 90, 41, 0.8);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  
+  -webkit-animation: spin 0.2s normal;
+  -moz-animation:    spin 0.2s normal;
+  -o-animation:      spin 0.2s normal;
+  animation:         spin 0.2s normal;
 }
 
+@-webkit-keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
 
