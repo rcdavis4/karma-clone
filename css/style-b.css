@@ -57,9 +57,9 @@ body {
 .links a:hover {
   cursor: pointer;
   color: #f15a29;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .links a:active {
@@ -123,16 +123,25 @@ body {
 }
 
 .big-button:hover {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 1), 0 0 0 4px #f15a29;
+  background-color: #d9400e; 
+}
+
+
+/*
+.big-button:hover {
   background-color: rgba(241, 90, 41, 0.8);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
   
-  -webkit-animation: spin 0.2s normal;
-  -moz-animation:    spin 0.2s normal;
-  -o-animation:      spin 0.2s normal;
-  animation:         spin 0.2s normal;
+  -webkit-animation: spin 0.2s linear;
+  -moz-animation:    spin 0.2s linear;
+  -o-animation:      spin 0.2s linear;
+  animation:         spin 0.2s linear;
 }
+*/
+
 
 @-webkit-keyframes spin {
   from {transform: rotate(0deg);}
