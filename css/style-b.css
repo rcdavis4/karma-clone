@@ -26,6 +26,7 @@ body {
   width: 100vw;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+  z-index: 100;
 }
 
 .top-nav > .content {
@@ -128,19 +129,49 @@ body {
 }
 
 
-/*
-.big-button:hover {
-  background-color: rgba(241, 90, 41, 0.8);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  
+
+/******  INFO SECTION  ******/
+
+
+.karma-info h2, h3, ul {
+  text-align: center;
+}
+
+.karma-info h2 {
+  font-size: 2.75rem;
+  font-weight: 300;
+  margin-top: 7.4rem;
+  margin-bottom: 3rem;
+}
+
+.caption h3 {
+  color: #000;
+  font-weight: 400;
+  width: 160px;
+  font-size: 1.5rem;
+  margin: 2rem auto;
+}
+
+.devices li {
+  padding: 0 2.5rem;
+  width: 33.33%;
+  float: left;
+}
+
+.devices img {
+  width: 127px;
+}
+
+.devices img:hover {
   -webkit-animation: spin 0.2s linear;
   -moz-animation:    spin 0.2s linear;
   -o-animation:      spin 0.2s linear;
   animation:         spin 0.2s linear;
 }
-*/
+
+
+
+/******  KEYFRAME ANIMATIONS  ******/
 
 
 @-webkit-keyframes spin {
@@ -158,5 +189,4 @@ body {
 @keyframes spin {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
-}
-
+}  
