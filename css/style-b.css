@@ -26,7 +26,7 @@ body {
   width: 100vw;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-  z-index: 100;
+  z-index: 9999;
 }
 
 .top-nav > .content {
@@ -133,11 +133,11 @@ body {
 /******  INFO SECTION  ******/
 
 
-.karma-info h2, h3, ul {
+.cases h2, h3, ul {
   text-align: center;
 }
 
-.karma-info h2 {
+.cases h2 {
   font-size: 2.75rem;
   font-weight: 300;
   margin-top: 7.4rem;
@@ -145,28 +145,38 @@ body {
 }
 
 .caption h3 {
-  color: #000;
+  width: 10rem;
+/*  margin: 2rem auto;*/
   font-weight: 400;
-  width: 160px;
   font-size: 1.5rem;
-  margin: 2rem auto;
+  color: #000;
+}
+
+.devices {
+  display: -ms-flexbox;     
+  display: -webkit-flex;
+  display: flex;
 }
 
 .devices li {
-  padding: 0 2.5rem;
-  width: 33.33%;
-  float: left;
+  margin: 0 auto;
 }
+
+/*.devices li {*/
+/*  padding: 0 2.5rem;*/
+/*  width: 33.33%;*/
+/*  float: left;*/
+/*}*/
 
 .devices img {
   width: 127px;
 }
 
 .devices img:hover {
-  -webkit-animation: spin 0.2s linear;
-  -moz-animation:    spin 0.2s linear;
-  -o-animation:      spin 0.2s linear;
-  animation:         spin 0.2s linear;
+  -webkit-animation: spin 0.3s linear;
+  -moz-animation:    spin 0.3s linear;
+  -o-animation:      spin 0.3s linear;
+  animation:         spin 0.3s linear;
 }
 
 
