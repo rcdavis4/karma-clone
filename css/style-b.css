@@ -162,11 +162,14 @@ body {
   margin: 0 auto;
 }
 
-/*.devices li {*/
-/*  padding: 0 2.5rem;*/
-/*  width: 33.33%;*/
-/*  float: left;*/
-/*}*/
+/* USE FOR FLOATING ELEMENTS INSTEAD OF FLEXBOX */
+/*
+.devices li {
+  padding: 0 2.5rem;
+  width: 33.33%;
+  float: left;
+}
+*/
 
 .devices img {
   width: 127px;
@@ -177,6 +180,48 @@ body {
   -moz-animation:    spin 0.3s linear;
   -o-animation:      spin 0.3s linear;
   animation:         spin 0.3s linear;
+}
+
+
+
+/******  FOOTER SECTION  ******/
+
+.social {
+  text-align: center;
+  margin: 8rem auto;
+}
+
+.social h5 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.icons li {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 1px solid #eaebec;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0.2rem 0.25rem;
+}
+
+.twitter span {
+  color: #55acee;
+}
+
+.facebook span {
+  color: #4c66a4;
+}
+
+.instagram span {
+  color: #3f729b;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #838994;
 }
 
 
