@@ -146,7 +146,6 @@ body {
 
 .caption h3 {
   width: 10rem;
-/*  margin: 2rem auto;*/
   font-weight: 400;
   font-size: 1.5rem;
   color: #000;
@@ -161,15 +160,6 @@ body {
 .devices li {
   margin: 0 auto;
 }
-
-/* USE FOR FLOATING ELEMENTS INSTEAD OF FLEXBOX */
-/*
-.devices li {
-  padding: 0 2.5rem;
-  width: 33.33%;
-  float: left;
-}
-*/
 
 .devices img {
   width: 127px;
