@@ -1,4 +1,8 @@
-/******  GENERAL  ******/
+/*
+  ========================================
+  GENERAL
+  ========================================
+*/
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -18,8 +22,11 @@ body {
 }
 
 
-
-/******  NAVIGATION  ******/
+/*
+  ========================================
+  NAVIGATION
+  ========================================
+*/
 
 .top-nav {
   position: fixed;
@@ -75,7 +82,11 @@ body {
 }
 
 
-/******  HERO INTRODUCTION  ******/
+/*
+  ========================================
+  HERO INTRODUCTION
+  ========================================
+*/
 
 .hero-intro {
   background-image: url(../img/hero-img.jpg);
@@ -129,8 +140,11 @@ body {
 }
 
 
-
-/******  INFO SECTION  ******/
+/*
+  ========================================
+  INFO SECTION
+  ========================================
+*/
 
 
 .cases h2, h3, ul {
@@ -152,8 +166,9 @@ body {
   color: #000;
 }
 
+/* FLEXBOX */
 .devices {
-  display: -ms-flexbox;     
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 }
@@ -162,12 +177,19 @@ body {
   margin: 0 auto;
 }
 
-/* USE FOR FLOATING ELEMENTS INSTEAD OF FLEXBOX */
+/* FLOATING ELEMENTS */
+/*.devices li {*/
+/*  padding: 0 2.5rem;*/
+/*  width: 33.33%;*/
+/*  float: left;*/
+}
+
+/* CALC() FUNCTION */
 /*
 .devices li {
-  padding: 0 2.5rem;
-  width: 33.33%;
   float: left;
+  width: calc(33% - 20px);
+  margin: 10px;
 }
 */
 
@@ -183,9 +205,11 @@ body {
 }
 
 
-
-/******  FOOTER SECTION  ******/
-
+/*
+  ========================================
+  FOOTER SECTION
+  ========================================
+*/
 
 .social {
   text-align: center;
@@ -235,8 +259,11 @@ hr {
 }
 
 
-
-/******  KEYFRAME ANIMATIONS  ******/
+/*
+  ========================================
+  KEYFRAME ANIMATIONS
+  ========================================
+*/
 
 
 @-webkit-keyframes spin {
@@ -254,4 +281,4 @@ hr {
 @keyframes spin {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
-}  
+}
